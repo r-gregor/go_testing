@@ -1,0 +1,53 @@
+Script started on 2019-10-20 18:00:20+0200
+bash: /#: No such file or directory
+[H[2J
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules][00m 
+$> ls[K[Ktree
+[01;34m.[00m
+|-- [01;34mgithub.com[00m
+|   `-- [01;34mr-gregor[00m
+|       `-- [01;34mtmspkg[00m
+|           |-- go.mod
+|           `-- tmspkg.go
+|-- [01;34mmodules[00m
+|   |-- go.mod
+|   |-- tmsmain.go
+|   `-- [01;34mtmspkg[00m
+|       |-- go.mod
+|       `-- tmspkg.go
+|-- [01;34mmodules2[00m
+|   |-- go.mod
+|   |-- go.sum
+|   `-- tmsmain2.go
+|-- [01;34mmodules_local[00m
+|   |-- go.mod
+|   `-- tmsmain_local.go
+|-- [01;34mostalo[00m
+|   |-- timeAndDate.go
+|   `-- tms.go
+`-- typescript
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules][00m 
+$> cd modules2
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/modules2][00m 
+$> go run tmsmain2.go 
+Current date: 20191020
+Current date and time: 20191020_060054
+[ 20191020_060054 ] -- Starting ...
+[ 20191020_060054 ] -- Iteration: 1
+[ 20191020_060055 ] -- Iteration: 2
+[ 20191020_060056 ] -- Iteration: 3
+[ 20191020_060057 ] -- Iteration: 4
+[ 20191020_060058 ] -- Iteration: 5
+[ 20191020_060059 ] -- Iteration: 6
+[ 20191020_060100 ] -- Iteration: 7
+[ 20191020_060101 ] -- Iteration: 8
+[ 20191020_060102 ] -- Iteration: 9
+[ 20191020_060103 ] -- Iteration: 10
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/modules2][00m 
+$> exir[Kt
+exit
+
+Script done on 2019-10-20 18:01:25+0200

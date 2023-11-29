@@ -1,0 +1,80 @@
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/coding/GO_en/GO_en_testing]
+$> cat seznam.txt | sed 's/\([[:digit:]]\{8\}\)\(.*\)/\2_\1/'^C
+
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/coding/GO_en/GO_en_testing]
+$> \ls -1
+20190927_example
+20190927_zamenjaj
+20190930_simple-tests
+20191001_joining_strings
+20191002_deb_stene_cevi
+20191004_numbers
+20191007_structs
+20191008_pointers
+20191017_modules-testing
+20191017_time-and-date
+20191020_time-and-date_modules
+eval.go
+mytime.exe
+mytime.go
+RENAME_20191025.txt
+
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/coding/GO_en/GO_en_testing]
+$> \ls -1 >> seznam.txt
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/coding/GO_en/GO_en_testing]
+$> cat seznam.txt | sed 's/\([[:digit:]]\{8\}\)\(.*\)/\2_\1/'
+_example_20190927
+_zamenjaj_20190927
+_simple-tests_20190930
+_joining_strings_20191001
+_deb_stene_cevi_20191002
+_numbers_20191004
+_structs_20191007
+_pointers_20191008
+_modules-testing_20191017
+_time-and-date_20191017
+_time-and-date_modules_20191020
+eval.go
+mytime.exe
+mytime.go
+seznam.txt
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/coding/GO_en/GO_en_testing]
+$> let i=1; while read line;do echo "G00${i}_${line}"; let i=i+1; done <seznam.txt
+G001_20190927_example
+G002_20190927_zamenjaj
+G003_20190930_simple-tests
+G004_20191001_joining_strings
+G005_20191002_deb_stene_cevi
+G006_20191004_numbers
+G007_20191007_structs
+G008_20191008_pointers
+G009_20191017_modules-testing
+G0010_20191017_time-and-date
+G0011_20191020_time-and-date_modules
+G0012_eval.go
+G0013_mytime.exe
+G0014_mytime.go
+G0015_seznam.txt
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/coding/GO_en/GO_en_testing]
+$> let i=1; while read line;do echo "g${i}_${line}"; let i=i+1; done <seznam.txt
+g1_20190927_example
+g2_20190927_zamenjaj
+g3_20190930_simple-tests
+g4_20191001_joining_strings
+g5_20191002_deb_stene_cevi
+g6_20191004_numbers
+g7_20191007_structs
+g8_20191008_pointers
+g9_20191017_modules-testing
+g10_20191017_time-and-date
+g11_20191020_time-and-date_modules
+g12_eval.go
+g13_mytime.exe
+g14_mytime.go
+g15_seznam.txt
+

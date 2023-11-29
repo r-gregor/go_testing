@@ -1,0 +1,73 @@
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT]
+$> tree
+.
+|-- pkgtest
+|   `-- src
+|       |-- main.go
+|       `-- source
+|           `-- source.go
+`-- pkgtest2
+    |-- go.mod
+    |-- main.go
+    `-- source
+        |-- go.mod
+        `-- source.go
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT]
+$> GOPATH=$(cygpath -w $(realpath ./pkgtest)) go run pkgtest/src/main.go
+The sum of numbers 100, 200, 300, 400, 500 is: 2500
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT]
+$> cd pkgtest2/
+
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT/pkgtest2]
+$> go run main.go
+The sum of numbers 100, 200, 300, 400, 500 is: 2500
+
+==============================================================================================================
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT/pkgtest2]
+$> cat go.mod
+module main
+
+require source v1.0.0
+
+replace source => ./source
+
+go 1.13
+
+==============================================================================================================
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT/pkgtest2]
+$> cat source/go.mod
+module source
+
+go 1.13
+
+==============================================================================================================
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT/pkgtest2]
+$> cat main.go
+package main
+
+import "fmt"
+import "source"
+
+func main() {
+    fmt.Println("The sum of numbers 100, 200, 300, 400, 500 is:", source.GetSum(100,200,300,400,500,1000))
+}
+
+==============================================================================================================
+$> gregor.redelonghi@cygwin-en [/home/gregor.redelonghi/majstaf/BRISI/RROOTT/pkgtest2]
+$> cat source/source.go
+package source
+
+import _ "fmt"
+
+func GetSum(numbers ...int) int {
+    sum := 0
+
+    for _ ,num := range numbers {
+        sum += num
+    }
+    return sum
+}
+
+==============================================================================================================

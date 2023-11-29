@@ -1,0 +1,11 @@
+./20190927_example
+./20190927_zamenjaj
+./20190930_simple-tests
+./20191001_joining_strings
+./20191002_deb_stene_cevi
+./20191004_numbers
+./20191007_structs
+./20191008_pointers
+./20191017_modules-testing
+./20191017_time-and-date
+./20191020_time-and-date_modules
