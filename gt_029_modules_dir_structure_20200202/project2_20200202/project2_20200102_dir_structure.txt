@@ -1,0 +1,21 @@
+project2_20200102 dir structure:
+
+project2_20200202/
+|-- cmd
+|   |-- finalapp (built executable)
+|   `-- main.go ***
+|-- go.mod
+`-- pkg
+    |-- go.mod
+    |-- mymodule
+    |   |-- krneki.go
+    |   `-- subdir1
+    |       `-- subsubdir1
+    |           `-- info.go
+    `-- tmspkg
+        `-- tmspkg.go
+
+
+
+2 go.mod files:     1 - at the root of the cmd dir (main)
+                    2 - at the root of pkg dir (all modules and submodules under the same dir)

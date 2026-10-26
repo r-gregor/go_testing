@@ -1,0 +1,54 @@
+Script started on 2019-10-20 18:05:20+0200
+bash: /#: No such file or directory
+[H[2J
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules][00m 
+$> mkdir myproject
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules][00m 
+$> cd myproject/
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/myproject][00m 
+$> cp ../modules2/tmsmain2.go ./mymain.go
+'../modules2/tmsmain2.go' -> './mymain.go'
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/myproject][00m 
+$> atom mymain.go 
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/myproject][00m 
+$> go mod init mymain.go [K[K[K[K
+go: creating new go.mod: module mymain
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/myproject][00m 
+$> go run ./gom[K[K[Kmymain.go 
+Current date: 20191020
+Current date and time: 20191020_060833
+[ 20191020_060833 ] -- Starting ...
+[ 20191020_060833 ] -- Iteration: 1
+[ 20191020_060834 ] -- Iteration: 2
+[ 20191020_060835 ] -- Iteration: 3
+[ 20191020_060836 ] -- Iteration: 4
+[ 20191020_060837 ] -- Iteration: 5
+[ 20191020_060838 ] -- Iteration: 6
+[ 20191020_060839 ] -- Iteration: 7
+[ 20191020_060840 ] -- Iteration: 8
+[ 20191020_060841 ] -- Iteration: 9
+[ 20191020_060842 ] -- Iteration: 10
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/myproject][00m 
+$> cat go.mod 
+module mymain
+
+go 1.13
+
+require github.com/r-gregor/tmspkg v1.0.0 // indirect
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/myproject][00m 
+$> cat go.mod [K[K[K[Ksum 
+github.com/r-gregor/tmspkg v1.0.0 h1:5GolGx9yoZmhnnUF71lukfTot7KQKA+t02dfiFrTla4=
+github.com/r-gregor/tmspkg v1.0.0/go.mod h1:gg2Jrmp+wNYhxcmBBcvfani3MWgsl+vl6p3nld2JQDI=
+
+$> [01;32mrgregor@rgregor-hp [01;34m[/home/rgregor/GO_d_testing/20191020_time-and-date_modules/myproject][00m 
+$> exit
+exit
+
+Script done on 2019-10-20 18:08:57+0200

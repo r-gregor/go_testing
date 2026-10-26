@@ -1,0 +1,20 @@
+project_20200102 dir structure:
+
+project_20200102/
+|-- finalApp
+|-- go.mod ***
+|-- go.sum
+|-- main.go
+|-- mymodule
+|   |-- go.mod ***
+|   |-- krneki.go
+|   `-- subdir1
+|       `-- subsubdir1
+|           `-- info.go
+`-- tmspkg
+    |-- go.mod ***
+    `-- tmspkg.go
+
+3 go.mod files:     1 - at the root of the project_20200102
+                    2 - at the root of mymodule dir
+                    3 - at the root of tmspkg dir
